@@ -53,6 +53,9 @@ notes-sharing-platform/
 B.Tech CSE (2nd Year)
 
 ---
+## Limitations
+- Notes are stored using browser localStorage
+- No backend or authentication in current version
 
 ## ⭐ If you like this project
 Give it a ⭐ on GitHub!
