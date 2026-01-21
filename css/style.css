@@ -2,50 +2,81 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* REMOVE UNDERLINE FROM LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-  margin: 0;
   font-family: "Inter", sans-serif;
   min-height: 100vh;
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: #2c3e50;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 .navbar {
   padding: 20px;
   text-align: center;
   color: white;
 }
 
-.navbar h1 {
-  margin: 0;
-  font-size: 26px;
-  font-weight: 700;
-}
-
-/* ===== MAIN CARD ===== */
+/* CONTAINER */
 .container {
   max-width: 720px;
   margin: 40px auto;
   padding: 30px;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border-radius: 18px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== TEXT ===== */
-.subtitle {
+.home {
   text-align: center;
+}
+
+/* TEXT */
+.subtitle {
   color: #f1f1f1;
   font-size: 15px;
   margin-bottom: 30px;
 }
 
-/* ===== INPUTS ===== */
+/* BUTTONS */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* INPUTS */
 input {
   width: 100%;
   padding: 14px;
@@ -56,42 +87,14 @@ input {
   font-size: 14px;
 }
 
-/* ===== BUTTONS ===== */
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background: linear-gradient(135deg, #43cea2, #185a9d);
-  color: white;
-  border-radius: 10px;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-}
-
-/* ===== HOME ACTIONS ===== */
-.actions {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* ===== NOTES ===== */
+/* NOTES LIST */
 ul {
   list-style: none;
   padding: 0;
 }
 
 li {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.9);
   margin: 14px 0;
   padding: 16px 18px;
   border-radius: 14px;
@@ -99,15 +102,13 @@ li {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  animation: fadeIn 0.4s ease;
 }
 
 li span {
   font-weight: 600;
-  color: #2c3e50;
 }
 
-/* ===== DELETE BUTTON ===== */
+/* DELETE BUTTON */
 li button {
   background: linear-gradient(135deg, #ff416c, #ff4b2b);
   border: none;
@@ -116,20 +117,4 @@ li button {
   border-radius: 8px;
   cursor: pointer;
   font-size: 12px;
-}
-
-li button:hover {
-  opacity: 0.9;
-}
-
-/* ===== ANIMATION ===== */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
