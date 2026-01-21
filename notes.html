@@ -1,2 +1,28 @@
-<h2>Available Notes</h2>
-<p>No notes uploaded yet</p>
+<!doctype html>
+<html>
+  <head>
+    <title>View Notes</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>Available Notes</h2>
+
+    <ul id="notesList"></ul>
+
+    <script src="js/script.js"></script>
+    <script>
+      let notes = JSON.parse(localStorage.getItem("notes")) || [];
+      let list = document.getElementById("notesList");
+
+      if (notes.length === 0) {
+        list.innerHTML = "<li>No notes available</li>";
+      } else {
+        notes.forEach((note) => {
+          let li = document.createElement("li");
+          li.textContent = note.subject + " - " + note.title;
+          list.appendChild(li);
+        });
+      }
+    </script>
+  </body>
+</html>
