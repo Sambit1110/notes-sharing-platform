@@ -35,9 +35,10 @@
         notes.forEach((note, index) => {
           let li = document.createElement("li");
           li.innerHTML = `
-        ${note.subject} - ${note.title}
-        <button onclick="deleteNote(${index})">❌ Delete</button>
-      `;
+  <span>${note.subject} — ${note.title}</span>
+  <button onclick="deleteNote(${index})">Delete</button>
+`;
+
           list.appendChild(li);
         });
       }
