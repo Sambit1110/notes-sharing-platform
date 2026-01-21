@@ -1,7 +1,5 @@
 # Notes Sharing Platform 📚
-
 A simple web-based platform designed for students to upload and access academic notes easily.
-
 
 🔗 Live Demo
 https://sambit1110.github.io/notes-sharing-platform/
@@ -18,7 +16,7 @@ Tech Stack
 - JavaScript
 - GitHub Pages (for hosting)
 
- 👨‍🎓 Author
+ 👨‍🎓 Author-
 **Sambit Biswas**  
 B.Tech CSE (2nd Year)
 
