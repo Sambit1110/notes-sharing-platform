@@ -11,18 +11,27 @@
 
     <script src="js/script.js"></script>
     <script>
-      let notes = JSON.parse(localStorage.getItem("notes")) || [];
-      let list = document.getElementById("notesList");
+      function displayNotes() {
+        let notes = JSON.parse(localStorage.getItem("notes")) || [];
+        let list = document.getElementById("notesList");
+        list.innerHTML = "";
 
-      if (notes.length === 0) {
-        list.innerHTML = "<li>No notes available</li>";
-      } else {
-        notes.forEach((note) => {
+        if (notes.length === 0) {
+          list.innerHTML = "<li>No notes available</li>";
+          return;
+        }
+
+        notes.forEach((note, index) => {
           let li = document.createElement("li");
-          li.textContent = note.subject + " - " + note.title;
+          li.innerHTML = `
+        ${note.subject} - ${note.title}
+        <button onclick="deleteNote(${index})">❌ Delete</button>
+      `;
           list.appendChild(li);
         });
       }
+
+      displayNotes();
     </script>
   </body>
 </html>

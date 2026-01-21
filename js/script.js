@@ -18,3 +18,9 @@ function addNote() {
   document.getElementById("subject").value = "";
   document.getElementById("title").value = "";
 }
+function deleteNote(index) {
+  let notes = JSON.parse(localStorage.getItem("notes")) || [];
+  notes.splice(index, 1);
+  localStorage.setItem("notes", JSON.stringify(notes));
+  location.reload(); // refresh page to update list
+}
