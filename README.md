@@ -4,12 +4,12 @@ A simple web-based platform designed for students to upload and access academic 
 
 ---
 
-## 🔗 Live Demo
+🔗 Live Demo
 https://sambit1110.github.io/notes-sharing-platform/
 
 ---
 
-## ✨ Features
+ Features
 - Upload notes (frontend simulation)
 - View notes subject-wise
 - Simple and clean user interface
@@ -17,45 +17,20 @@ https://sambit1110.github.io/notes-sharing-platform/
 
 ---
 
-## 🛠️ Tech Stack
+Tech Stack
 - HTML
 - CSS
 - JavaScript
 - GitHub Pages (for hosting)
 
----
-
-## 📁 Project Structure
-notes-sharing-platform/
-│
-├── index.html
-├── upload.html
-├── notes.html
-│
-├── css/
-│ └── style.css
-│
-└── js/
-└── script.js
-
----
-
-## 🚀 Future Enhancements
-- Backend integration using Flask or PHP
-- User authentication (Login/Signup)
-- Database for storing notes
-- Real file upload and download
-
----
-
-## 👨‍🎓 Author
+ 👨‍🎓 Author
 **Sambit Biswas**  
 B.Tech CSE (2nd Year)
 
 ---
-## Limitations
+ Limitations
 - Notes are stored using browser localStorage
 - No backend or authentication in current version
 
-## ⭐ If you like this project
+ ⭐ If you like this project
 Give it a ⭐ on GitHub!
