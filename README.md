@@ -5,7 +5,7 @@ A simple web-based platform designed for students to upload and access academic 
 ---
 
 ## 🔗 Live Demo
-https://sambitbiswas.github.io/notes-sharing-platform/
+https://sambit1110.github.io/notes-sharing-platform/
 
 ---
 
