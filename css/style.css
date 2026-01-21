@@ -161,3 +161,35 @@ li button:hover {
     justify-content: center;
   }
 }
+/* ===== THEME BUTTON ===== */
+.theme-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  border-radius: 50%;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+/* ===== DARK MODE ===== */
+body.dark {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ecf0f1;
+}
+
+body.dark .container {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+body.dark li {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ecf0f1;
+}
+
+body.dark li span {
+  color: #ecf0f1;
+}
