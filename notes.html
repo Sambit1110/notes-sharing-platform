@@ -4,22 +4,19 @@
     <title>View Notes</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <body>
-      <div class="navbar">
-        <h1>Available Notes</h1>
-      </div>
+    <!-- Navbar -->
+    <div class="navbar">
+      <h1>Available Notes</h1>
+    </div>
 
-      <div class="container">
-        <ul id="notesList"></ul>
-      </div>
-    </body>
-
+    <!-- Notes Container -->
     <div class="container">
-      <h2>Available Notes</h2>
       <ul id="notesList"></ul>
     </div>
 
+    <!-- Scripts -->
     <script src="js/script.js"></script>
     <script>
       function displayNotes() {
@@ -35,10 +32,9 @@
         notes.forEach((note, index) => {
           let li = document.createElement("li");
           li.innerHTML = `
-  <span>${note.subject} — ${note.title}</span>
-  <button onclick="deleteNote(${index})">Delete</button>
-`;
-
+            <span>${note.subject} — ${note.title}</span>
+            <button onclick="deleteNote(${index})">Delete</button>
+          `;
           list.appendChild(li);
         });
       }
