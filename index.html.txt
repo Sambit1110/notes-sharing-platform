@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notes Sharing Platform</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>📚 Notes Sharing Platform</h1>
+  <a href="upload.html">Upload Notes</a> |
+  <a href="notes.html">View Notes</a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
